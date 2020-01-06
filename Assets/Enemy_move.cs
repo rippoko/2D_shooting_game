@@ -23,6 +23,11 @@ public class Enemy_move : MonoBehaviour
 
         //敵の生成位置
         //x方向の位置
+        /*if ((int)r.Next(2) == 0)
+        {
+            epos.x = (float)r.Next((int)(Screen.width + min_margin), (int)(Screen.width + max_margin));
+            epos.y = (float)r.Next((int)(-Screen.height - max_margin), (int)(Screen.height + max_margin));
+        }*/
         if ((int)r.Next(2) == 0) epos.x = (float)r.Next((int)(Screen.width + min_margin), (int)(Screen.width + max_margin));
         else epos.x = (float)r.Next((int)(-Screen.width - max_margin), (int)(-Screen.width - min_margin));
         //y方向の位置
